@@ -1,7 +1,7 @@
 function imagout = gdetect(imagin,umbral)
 
 if (umbral >= 1 || umbral <= 0)
-    disp('Error: Umbral debe ser entre [0,1]')
+    disp('Error: El parametro de umbral debe ser entre [0,1]')
 end
 
 %largo = size(imagin,1);
