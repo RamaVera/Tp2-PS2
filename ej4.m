@@ -25,7 +25,7 @@ for i=1:4
     imshow(mat2gray(f_lenna))
     title(['impar \lambda=', num2str(lambda)])
 end
-
+hgexport(gcf,'images/4/lambda_var.png')
 lambda=8; s_vec=[2 4 6 8];
 figure
 for i=1:4
@@ -44,8 +44,8 @@ for i=1:4
     imshow(mat2gray(f_lenna))
     title(['impar \sigma=', num2str(sigma)])
 end
-
-sigma=4; t_vec=[0 pi/4 pi/2 pi*3/4]; 
+hgexport(gcf,'images/4/sigma_var.png')
+sigma=3; t_vec=[0 pi/4 pi/2 pi*3/4]; 
 pi_vec={'0' '\pi/4' '\pi/2' ' 3\pi/4'}
 figure
 for i=1:4
@@ -64,3 +64,4 @@ for i=1:4
     imshow(mat2gray(f_lenna))
     title(['impar \theta=', pi_vec{i}])
 end
+hgexport(gcf,'images/4/theta_var.png')
